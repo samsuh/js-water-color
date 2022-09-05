@@ -36,6 +36,7 @@ class Poly {
     this.vertices = vertices;
     if(!modifiers) {
       modifiers = [];
+      //control splotchy-ness
       for(let i = 0; i < vertices.length; i ++) {
         modifiers.push(random(0.1, 0.8));
       }
@@ -43,6 +44,7 @@ class Poly {
     this.modifiers = modifiers;
   }
   
+  //generates new polygons that are expansions of the grown edges
   grow() {
     const grownVerts = [];
     const grownMods = [];
@@ -106,6 +108,7 @@ function waterColour(poly, colour) {
   }  
 }
 
+//random function ouputting between 0 and 1, but biased towards 0.5
 function rand() {
   return distribute(random(1));
 }
