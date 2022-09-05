@@ -1,5 +1,5 @@
 # js-water-color
-watercolor effect using recursive polygon deformation
+watercolor effect using recursive polygon deformation written for the p5js environment
 
 
 #### Source: https://www.reddit.com/r/creativecoding/comments/x6acq2/water_colour_effect_code_in_comments/
